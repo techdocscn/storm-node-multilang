@@ -1,10 +1,10 @@
 # storm-node-multilang
 
-An implementation of the multi-language support for [Storm][0] in **node.js**
+一个基于 **node.js** 的 [Storm][0] 多语言支持实现
 
-## Example Usage
+## 样本
 
-### Spout creation
+### 产生 Spout
 
 ```javascript
 	
@@ -47,7 +47,7 @@ An implementation of the multi-language support for [Storm][0] in **node.js**
 ``` 
 
 
-### Bolt creation
+### 产生 Bolt
 
 ```javascript
 	
@@ -80,31 +80,30 @@ An implementation of the multi-language support for [Storm][0] in **node.js**
     
 ``` 
 
-## How to test my node.js spouts and bolts with Storm ?
+## 如何用 Storm 测试我的 node.js spouts 和 bolts ?
 
-To test your node.js spouts and bolts you will need to setup a storm cluster 
-which is very painful if you don't want to run VM and a Zookeeper cluster.  
+为了测试你的 node.js spouts 和 bolts，你需要建立一个storm 集群。如果你不想运行 VM 和一个
+Zookeeper 集群的话会很麻烦。
 
-Storm provides a `LocalCluster` class to test a topology locally.  
+Storm 提供了一个 'LocalCluster' 类用来在本地测试 topology。
 
-Maybe the easiest way to test your topologies is to use our [storm-local-multilang][1] project.
+可能测试你的 topologies 的最简单办法是使用我们的 [storm-local-multilang][1] 项目
 
-
-## Installation
+## 安装
 
     $ npm install storm-node-multilang
 
-## Running Tests
+## 运行测试
 
-To run the test suite first invoke the following command within the repo, installing the development dependencies:
+首先在 repo 下面运行以下命令，安装依赖库文件：
 
     $ npm install
 
-then run the tests (require `mocha`) :
+然后运行测试（需要 `mocha`）：
 
     $ npm test
 
-## Licence
+## 版权
 
 Copyright (c) 2012 Michaël Schwartz, EPOKMEDIA <info@epokmedia.fr>
 
